@@ -1,0 +1,152 @@
+/* Global Styles */
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.section-title span {
+  position: relative;
+  padding-bottom: 5px;
+}
+.section-title span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 50px;
+  height: 3px;
+  background-color: #007bff;
+}
+
+.profile-img {
+  width: 200px;
+  transition: transform 0.3s ease;
+}
+.profile-img:hover {
+  transform: scale(1.05);
+}
+
+.interests li {
+  margin-bottom: 10px;
+}
+
+.mobile-nav-toggle {
+  cursor: pointer;
+}
+
+#backToTop {
+  z-index: 100;
+  display: none;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+  transform: translateY(-3px);
+}
+/* Hover effects */
+.card:hover {
+  transform: translateY(-5px);
+  transition: all 0.3s ease;
+}
+
+/* Profile image zoom effect */
+.profile-img {
+  width: 300px;
+  transition: transform 0.3s ease;
+}
+.profile-img:hover {
+  transform: scale(1.05);
+}
+/* Offset for anchor links */
+section[id] {
+  scroll-margin-top: 80px; /* matches data-offset value */
+}
+/* Back to top button */
+#backToTop {
+  z-index: 100;
+  display: none;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Tooltip fix */
+.tooltip-inner {
+  background-color: #333;
+  color: #fff;
+  border-radius: 4px;
+  padding: 5px 10px;
+}
+/* Navbar Hover Effects */
+.navbar-custom {
+  position: relative;
+}
+
+.navbar-custom a {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: #212529;
+  transition: color 0.3s ease;
+}
+
+.navbar-custom a:hover {
+  color: #007bff; /* Change to your primary color */
+}
+
+/* Animated Underline */
+.navbar-custom a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #007bff;
+  transition: width 0.3s ease;
+}
+
+.navbar-custom a:hover::after {
+  width: 100%;
+}
+
+/* Dropdown Menu Animation */
+.dropdown-menu {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  opacity: 0;
+  transform: translateY(-10px);
+  visibility: hidden;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown:hover .dropdown-menu,
+.dropdown .dropdown-menu.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Optional: Scale dropdown items on hover */
+.dropdown-item:hover {
+  background-color: #f1f1f1;
+  transform: scale(1.02);
+  transition: all 0.2s ease;
+}
+navbar-custo/* Navbar Hover Effects */
+.navbar-custom {
+  position: relative;
+}
+
+.navbar-custom a {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: #212529;
+  transition: color 0.3s ease;
+}
+
+.navbar-custom a:hover {
+  color: #007bff; /* Change to your primary color */
+}
+.navbar-nav .nav-link.active {
+  border-bottom: none;
+  text-decoration: none;
+}
