@@ -48,16 +48,18 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 });
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
-    e.preventDefault();
+    const href = this.getAttribute("href");
 
-    const targetId = this.getAttribute("href").substring(1);
-    const targetElement = document.getElementById(targetId);
-
-    if (targetElement) {
-      window.scrollTo({
-        top: targetElement.offsetTop - 80,
-        behavior: "smooth",
-      });
+    // Only prevent default if this is an in-page anchor and it exists
+    if (href.startsWith("#") && href.length > 1) {
+      const targetElement = document.querySelector(href);
+      if (targetElement) {
+        e.preventDefault();
+        window.scrollTo({
+          top: targetElement.offsetTop - 80,
+          behavior: "smooth",
+        });
+      }
     }
   });
 });
