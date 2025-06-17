@@ -20,7 +20,7 @@ body {
 .profile-img {
   width: 200px;
   transition: transform 0.3s ease;
-  align: right
+  align: right;
 }
 .profile-img:hover {
   transform: scale(1.05);
@@ -53,6 +53,7 @@ body {
 .profile-img {
   width: 380px;
   transition: transform 0.3s ease;
+  align: right;
 }
 .profile-img:hover {
   transform: scale(1.05);
