@@ -16,7 +16,9 @@ body {
   height: 3px;
   background-color: #007bff;
 }
-
+.mb-0 {
+  color: white;
+}
 /* .profile-img {
   width: 200px;
   transition: transform 0.3s ease;
