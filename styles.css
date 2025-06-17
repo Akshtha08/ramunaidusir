@@ -35,7 +35,7 @@ body {
 
 #backToTop {
   z-index: 100;
-  display: none;
+
   transition: opacity 0.3s ease-in-out;
 }
 
@@ -50,16 +50,26 @@ body {
 
 /* Profile image zoom effect */
 .profile-img {
-  width: 300px;
+  width: 380px;
   transition: transform 0.3s ease;
 }
+
 .profile-img:hover {
   transform: scale(1.05);
+}
+
+.profile-img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+   /* Optional: Adds some spacing around the text */
+   /* Soft background for better contrast */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle elevation */
 }
 /* Offset for anchor links */
 section[id] {
   scroll-margin-top: 80px; /* matches data-offset value */
 }
+
 /* Back to top button */
 #backToTop {
   z-index: 100;
@@ -74,6 +84,7 @@ section[id] {
   border-radius: 4px;
   padding: 5px 10px;
 }
+
 /* Navbar Hover Effects */
 .navbar-custom {
   position: relative;
@@ -146,7 +157,95 @@ navbar-custo/* Navbar Hover Effects */
 .navbar-custom a:hover {
   color: #007bff; /* Change to your primary color */
 }
-.navbar-nav .nav-link.active {
-  border-bottom: none;
-  text-decoration: none;
+
+/* Animated Underline */
+.navbar-custom a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #007bff;
+  transition: width 0.3s ease;
+}
+
+.navbar-custom a:hover::after {
+  width: 100%;
+}
+
+.col-md-8 {
+  text-align:center;
+}
+
+/* Center content vertically on mobile */
+@media (max-width: 768px) {
+  .row.align-items-center {
+    text-align: center;
+  }
+
+  .col-md-8 {
+    text-align: center !important;
+  }
+}
+
+/* Subtle background card for profile info */
+.home-section {
+  background-color: #f9f9ff;
+  border-radius: 10px;
+  padding: 40px 20px;
+}
+
+/* Better dot styling for interests */
+.interests li i.bi-dot {
+  color: #007bff;
+  font-size: 20px;
+}
+
+/* Slight elevation effect on hover */
+
+/* Smooth transition for hover scale */
+
+.text-container {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 2rem; 
+  margin-left: 40px;
+  background-color: #f9f9ff; /* Soft background for better contrast */
+  border-radius: 20px;
+  
+}
+.text-container:hover {
+  transform: translateY(-5px); /* Slight upward shift */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .text-container {
+    margin-top: 20px; /* Add spacing between image and text on smaller screens */
+  }
+}
+
+
+
+/* Text Container Animation */
+.content-wrapper {
+  position: relative;
+  padding: 1px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.content-wrapper:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Optional: Add subtle dot styling using Bootstrap Icons */
+.interests li i.bi-dot {
+  color: #007bff;
+  font-size: 1.2rem;
+  margin-right: 8px;
 }
