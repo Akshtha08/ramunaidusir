@@ -19,7 +19,7 @@ body {
 .mb-0 {
   color: white;
 }
-/* .profile-img {
+ .profile-img {
   width: 200px;
   transition: transform 0.3s ease;
   align: right;
@@ -27,7 +27,7 @@ body {
 .profile-img:hover {
   transform: scale(1.05);
 }
-*/
+
 .interests li {
   margin-bottom: 10px;
 }
