@@ -6,3 +6,12 @@
   transform: translateY(-5px); /* Lifts the box up slightly */
   box-shadow: 0 10px 20px rgba(0,0,0,0.15); /* Slightly bigger shadow */
 }
+.profile-img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+}
+
+.profile-img:hover {
+  transform: translateY(-5px); /* Lifts image up */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Enhances shadow */
+}
