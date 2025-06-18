@@ -250,6 +250,6 @@ navbar-custo/* Navbar Hover Effects */
   font-size: 1.2rem;
   margin-right: 8px;
 }
-header h1 a {
+header h1 a.text-primary {
   color: #000; /* Black */
 }
