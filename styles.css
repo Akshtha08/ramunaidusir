@@ -87,10 +87,6 @@ section[id] {
 }
 
 /* Navbar Hover Effects */
-.navbar-custom {
-  position: relative;
-}
-
 /* Navbar Hover Effects */
 .navbar-custom .nav-link {
   position: relative;
@@ -139,38 +135,7 @@ section[id] {
   transform: scale(1.02);
   transition: all 0.2s ease;
 }
-navbar-custo/* Navbar Hover Effects */
-.navbar-custom {
-  position: relative;
-}
 
-.navbar-custom a {
-  position: relative;
-  display: inline-block;
-  text-decoration: none;
-  color: #000000;
-  transition: color 0.3s ease;
-}
-
-.navbar-custom a:hover {
-  color: #007bff; /* Change to your primary color */
-}
-
-/* Animated Underline */
-.navbar-custom a::after {
-  content: "";
-  position: absolute;
-  width: 0%;
-  height: 2px;
-  bottom: -4px;
-  left: 0;
-  background-color: #007bff;
-  transition: width 0.3s ease;
-}
-
-.navbar-custom a:hover::after {
-  width: 100%;
-}
 
 .col-md-8 {
   text-align:center;
