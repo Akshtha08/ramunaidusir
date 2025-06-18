@@ -1,17 +1,27 @@
+/* For text card float */
 .hover-float {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  will-change: transform, box-shadow;
 }
 
 .hover-float:hover {
-  transform: translateY(-5px); /* Lifts the box up slightly */
-  box-shadow: 0 10px 20px rgba(0,0,0,0.15); /* Slightly bigger shadow */
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
 }
+
+/* For profile image float */
 .profile-img {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  will-change: transform, box-shadow;
   cursor: default;
 }
 
 .profile-img:hover {
-  transform: translateY(-5px); /* Lifts image up */
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Enhances shadow */
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Prevent clipping on hover */
+.col-md-4 {
+  overflow: visible;
 }
