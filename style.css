@@ -1,0 +1,8 @@
+.hover-float {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-float:hover {
+  transform: translateY(-5px); /* Lifts the box up slightly */
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15); /* Slightly bigger shadow */
+}
