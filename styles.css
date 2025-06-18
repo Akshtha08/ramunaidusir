@@ -91,34 +91,31 @@ section[id] {
   position: relative;
 }
 
-.navbar-custom a {
+/* Navbar Hover Effects */
+.navbar-custom .nav-link {
   position: relative;
   display: inline-block;
+  padding-bottom: 5px; /* prevents layout shift when underline appears */
+  color: #000 !important;
   text-decoration: none;
-  color: #212529;
   transition: color 0.3s ease;
 }
 
-.navbar-custom a:hover {
-  color: #007bff; /* Change to your primary color */
-}
-
-/* Animated Underline */
-.navbar-custom a::after {
+/* Underline Animation */
+.navbar-custom .nav-link::after {
   content: "";
   position: absolute;
+  left: 0;
+  bottom: 0;
   width: 0%;
   height: 2px;
-  bottom: -4px;
-  left: 0;
-  background-color: #007bff;
+  background-color: #000; /* black underline */
   transition: width 0.3s ease;
 }
 
-.navbar-custom a:hover::after {
+.navbar-custom .nav-link:hover::after {
   width: 100%;
 }
-
 /* Dropdown Menu Animation */
 .dropdown-menu {
   transition: opacity 0.3s ease, transform 0.3s ease;
