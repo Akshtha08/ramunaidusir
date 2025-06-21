@@ -125,3 +125,117 @@
 
     </header>
 
+     <section data-aos="fade-up">
+	 <div class="container">
+        <h3 class="mb-4 section-title"><span>Out Reach Programmes</span></h3>
+        <ul>
+          <li>Nodal Officer, Fit India Freedom Run 5.0</li>
+          <li>Nodal Officer, World Environmental Day-2025</li>
+          <li>Coordinator/Convener, LCS-SFP, IIPE</li>
+          <li>Coordinator, CS-TEAM,  IIPE</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="bg-light py-5 text-center" data-aos="fade-up">
+      <div class="container">
+        <h2>Contact Me</h2>
+        <p>
+          Email:
+          <a href="mailto:ramu.math@iipe.ac.in" class="text-primary"
+            >ramu.math@iipe.ac.in</a
+          >
+        </p>
+        <div class="social-icons mt-3">
+          <a
+            href="https://www.linkedin.com/in/ramu-naidu-randhi-a9783060?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B8GMMgoQIRfSb9Cf45OpSpg%3D%3D"
+            target="_blank"
+            class="me-3 text-primary"
+            data-bs-toggle="tooltip"
+            title="LinkedIn"
+          >
+            <i class="bi bi-linkedin fs-4"></i>
+          </a>
+          <a
+            href="https://scholar.google.com/citations?user=uN0GDe0AAAAJ&hl=en&oi=ao."
+            target="_blank"
+            class="me-3 text-danger"
+            data-bs-toggle="tooltip"
+            title="Google Scholar"
+          >
+            <i class="bi bi-google fs-4"></i>
+          </a>
+          <a
+            href="https://github.com/yourusername"
+            target="_blank"
+            class="me-3 text-dark"
+            data-bs-toggle="tooltip"
+            title="GitHub"
+          >
+            <i class="bi bi-github fs-4"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-3 bg-white border-top">
+      <p class="mb-0">
+        &copy; <span id="currentYear"></span> Dr. Ramunaidu Randhi. All rights
+        reserved.
+      </p>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a
+      href="#"
+      id="backToTop"
+      class="btn btn-primary rounded-circle position-fixed bottom-0 end-0 m-4 d-none"
+    >
+      <i class="bi bi-arrow-up"></i>
+    </a>
+
+    <!-- Vendor JS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+
+    <!-- Initialize Tooltip + Year -->
+    <script>
+      // Initialize AOS
+      AOS.init();
+
+      // Back to top button
+      window.addEventListener("scroll", function () {
+        const btn = document.getElementById("backToTop");
+        if (window.scrollY > 300) {
+          btn.classList.remove("d-none");
+        } else {
+          btn.classList.add("d-none");
+        }
+      });
+
+      // Mobile menu toggle
+      document
+        .querySelector(".mobile-nav-toggle")
+        .addEventListener("click", () => {
+          document.getElementById("mobile-menu").classList.toggle("d-none");
+        });
+
+      // Dynamic year
+      document.getElementById("currentYear").textContent =
+        new Date().getFullYear();
+
+      // Bootstrap tooltips
+      var tooltipTriggerList = [].slice.call(
+        document.querySelectorAll('[data-bs-toggle="tooltip"]')
+      );
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl);
+      });
+    </script>
+  </body>
+</html>
+
